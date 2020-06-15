@@ -1,0 +1,14 @@
+{ "files": [
+{ 
+                    "label": "c1",
+                    "path": "/assets/characters/c1.png"
+                }, 
+{ 
+                    "label": "martha",
+                    "path": "/assets/characters/martha.png"
+                }, 
+{ 
+                    "label": "red",
+                    "path": "/assets/characters/red.png"
+                }
+ ] }

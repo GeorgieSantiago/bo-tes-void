@@ -1,0 +1,26 @@
+{ "files": [
+{ 
+                    "label": "blocked_atlas",
+                    "path": "/assets/images/blocked_atlas.png"
+                }, 
+{ 
+                    "label": "ccannon",
+                    "path": "/assets/images/ccannon.png"
+                }, 
+{ 
+                    "label": "floor_atlas",
+                    "path": "/assets/images/floor_atlas.png"
+                }, 
+{ 
+                    "label": "titlebg",
+                    "path": "/assets/images/titlebg.png"
+                }, 
+{ 
+                    "label": "ui_atlas",
+                    "path": "/assets/images/ui_atlas.png"
+                }, 
+{ 
+                    "label": "wall_atlas",
+                    "path": "/assets/images/wall_atlas.png"
+                }
+ ] }

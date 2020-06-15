@@ -1,0 +1,10 @@
+{ "files": [
+{ 
+                    "label": "planet",
+                    "path": "/assets/maps/planet.json"
+                }, 
+{ 
+                    "label": "sandbox",
+                    "path": "/assets/maps/sandbox.json"
+                }
+ ] }

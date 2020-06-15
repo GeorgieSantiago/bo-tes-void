@@ -1,0 +1,9 @@
+.dialog {
+    padding: 30px 30px 30px 30px;
+    width: 66.66666667%;
+    background-color: #d2f1f0 ;
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}

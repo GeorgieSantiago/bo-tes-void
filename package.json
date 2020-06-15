@@ -1,0 +1,88 @@
+{
+  "name": "thebardoor",
+  "displayName": "The Bar Door",
+  "version": "0.0.1",
+  "description": "Psycho horror puzzle game ",
+  "main": "./src/index.js",
+  "scripts": {
+    "get-ip": "echo $(echo 'http://')$(ipconfig getifaddr en0)",
+    "dev": "webpack --mode development",
+    "build": "yarn autoload && webpack --mode production",
+    "start": "babel-watch ./server.js",
+    "watch": "webpack --watch --config webpack.config.js",
+    "serve": "node socket.js",
+    "ios": "cordova run ios",
+    "android": "cordova run android",
+    "autoload": "node manifest-generator.js maps .json && node manifest-generator.js images .png && node manifest-generator.js characters .png && node manifest-generator.js audio .mp3 .ogg .wav .mp4 && node manifest-generator.js enemies .png && node manifest-generator.js items .png",
+    "range": "node ./cli/range"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "engines": {
+    "node": "10.15.3"
+  },
+  "author": "GeorgieSantiago",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.7.7",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^5.1.1",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "css-loader": "^3.4.0",
+    "eslint": "^0.11.0-alpha.0",
+    "eslint-plugin-import": "^2.14.0",
+    "expose-loader": "^0.7.5",
+    "express": "^4.17.1",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-random-name": "^1.0.1",
+    "node-sass": "^4.13.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "babel-watch": "^7.0.0",
+    "cordova-android": "^8.1.0",
+    "cordova-ios": "^5.1.1",
+    "dotenv": "^8.2.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "faker": "^4.1.0",
+    "fs": "^0.0.1-security",
+    "phaser": "^3.21.0",
+    "phaser-animated-tiles": "^2.0.2",
+    "phaser3-rex-plugins": "^1.1.13",
+    "socket.io": "^2.3.0",
+    "terser-webpack-plugin": "^2.3.6",
+    "typewriter-effect": "^2.13.0",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

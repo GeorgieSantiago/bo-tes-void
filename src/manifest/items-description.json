@@ -1,0 +1,15 @@
+{ "files": [
+    
+    { 
+        "label": "misc_box",
+        "description": "Where did this box come from?",
+        "canUse": false,
+        "sanity": 0  
+    },
+    {
+        "label": "drink",
+        "description": "A stern drink to steel my nerves",
+        "canUse": true,
+        "sanity": 30
+    }
+] }

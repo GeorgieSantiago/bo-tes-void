@@ -1,0 +1,154 @@
+{ "files": [
+{ 
+                    "label": "Ambience_Hell_00",
+                    "path": "/assets/audio/Ambience_Hell_00.mp3"
+                }, 
+{ 
+                    "label": "Ambience_Hell_01",
+                    "path": "/assets/audio/Ambience_Hell_01.mp3"
+                }, 
+{ 
+                    "label": "Ambience_Hell_02",
+                    "path": "/assets/audio/Ambience_Hell_02.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_00",
+                    "path": "/assets/audio/Footstep_Dirt_00.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_01",
+                    "path": "/assets/audio/Footstep_Dirt_01.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_02",
+                    "path": "/assets/audio/Footstep_Dirt_02.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_03",
+                    "path": "/assets/audio/Footstep_Dirt_03.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_04",
+                    "path": "/assets/audio/Footstep_Dirt_04.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_05",
+                    "path": "/assets/audio/Footstep_Dirt_05.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_06",
+                    "path": "/assets/audio/Footstep_Dirt_06.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_07",
+                    "path": "/assets/audio/Footstep_Dirt_07.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_08",
+                    "path": "/assets/audio/Footstep_Dirt_08.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Dirt_09",
+                    "path": "/assets/audio/Footstep_Dirt_09.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Water_00",
+                    "path": "/assets/audio/Footstep_Water_00.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Water_01",
+                    "path": "/assets/audio/Footstep_Water_01.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Water_02",
+                    "path": "/assets/audio/Footstep_Water_02.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Water_03",
+                    "path": "/assets/audio/Footstep_Water_03.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Water_04",
+                    "path": "/assets/audio/Footstep_Water_04.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Water_05",
+                    "path": "/assets/audio/Footstep_Water_05.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Water_06",
+                    "path": "/assets/audio/Footstep_Water_06.mp3"
+                }, 
+{ 
+                    "label": "Footstep_Water_07",
+                    "path": "/assets/audio/Footstep_Water_07.mp3"
+                }, 
+{ 
+                    "label": "action-doorshut01",
+                    "path": "/assets/audio/action-doorshut01.wav"
+                }, 
+{ 
+                    "label": "action-openbook01",
+                    "path": "/assets/audio/action-openbook01.wav"
+                }, 
+{ 
+                    "label": "action-unlock01",
+                    "path": "/assets/audio/action-unlock01.wav"
+                }, 
+{ 
+                    "label": "action-unlock03",
+                    "path": "/assets/audio/action-unlock03.wav"
+                }, 
+{ 
+                    "label": "creature-growl02",
+                    "path": "/assets/audio/creature-growl02.wav"
+                }, 
+{ 
+                    "label": "f--ambience-creepyatmosfear",
+                    "path": "/assets/audio/f--ambience-creepyatmosfear.wav"
+                }, 
+{ 
+                    "label": "f--creature-growl03",
+                    "path": "/assets/audio/f--creature-growl03.wav"
+                }, 
+{ 
+                    "label": "footsteps_bar",
+                    "path": "/assets/audio/footsteps_bar.mp3"
+                }, 
+{ 
+                    "label": "human-breathingrapid01",
+                    "path": "/assets/audio/human-breathingrapid01.wav"
+                }, 
+{ 
+                    "label": "human-footstepsinsnow",
+                    "path": "/assets/audio/human-footstepsinsnow.wav"
+                }, 
+{ 
+                    "label": "human-footstepsongravel",
+                    "path": "/assets/audio/human-footstepsongravel.wav"
+                }, 
+{ 
+                    "label": "inventory_open",
+                    "path": "/assets/audio/inventory_open.mp3"
+                }, 
+{ 
+                    "label": "night_on_the_street",
+                    "path": "/assets/audio/night_on_the_street.mp3"
+                }, 
+{ 
+                    "label": "record",
+                    "path": "/assets/audio/record.mp3"
+                }, 
+{ 
+                    "label": "s50",
+                    "path": "/assets/audio/s50.mp3"
+                }, 
+{ 
+                    "label": "safe_room",
+                    "path": "/assets/audio/safe_room.wav"
+                }, 
+{ 
+                    "label": "the_ninth_crewman",
+                    "path": "/assets/audio/the_ninth_crewman.ogg"
+                }
+ ] }
