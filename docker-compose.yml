@@ -1,8 +1,42 @@
 version: "3"
 services:
     bootesvoid-game: 
-        build:
-            context: .
-            dockerfile: Dockerfile
-        ports: 
-            - "3000:3000"
+      build:
+        context: .
+        dockerfile: ./client/Dockerfile
+      ports: 
+        - "3000:3000"
+      depends_on:
+        - php
+    db:
+      build:
+        context: .
+        dockerfile: ./server/Dockerfile.mysql
+        args:
+          - MYSQL_DATABASE=bootesvoid_mysql
+          - MYSQL_USER=bootesvoid_mysql
+          - MYSQL_PASSWORD=bootesvoid_mysql
+          - MYSQL_ROOT_PASSWORD=bootesvoid_mysql
+      ports:
+        - 3306
+      volumes:
+        - db-data:/var/lib/mysql
+    php:
+      build:
+        context: .
+        dockerfile: ./server/Dockerfile.web
+      working_dir: /home/application
+      volumes:
+        - .:/home/application
+      environment:
+        PHP_IDE_CONFIG: "serverName=mbe"
+        COMPOSER_ALLOW_SUPERUSER: 1
+        WEB_DOCUMENT_ROOT: "/home/application/public"
+      ports:
+        - 8007:80
+      depends_on:
+        - db
+      links:
+        - db:bootesvoid_mysql
+volumes:
+    db-data:

@@ -14,7 +14,7 @@
     "ios": "cordova run ios",
     "android": "cordova run android",
     "autoload": "node manifest-generator.js maps .json && node manifest-generator.js images .png && node manifest-generator.js characters .png && node manifest-generator.js audio .mp3 .ogg .wav .mp4 && node manifest-generator.js enemies .png && node manifest-generator.js items .png",
-    "range": "node ./cli/range"
+    "range": "node ../cli/range"
   },
   "keywords": [
     "ecosystem:cordova"
