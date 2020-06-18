@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.georgiesantiago.thebardoor" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
+<widget id="com.georgiesantiago.bootesvoid" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
     <name>The Bar Door</name>
     <description>
         A psycho horror topdown RPG
     </description>
-    <author email="author@author.be" href="http://to.author.com">
+    <author email="milestoneartisan@gmail.com" href="https://github.com/GeorgieSantiago">
         GeorgieSantiago
     </author>
     <content src="src/index.html" />

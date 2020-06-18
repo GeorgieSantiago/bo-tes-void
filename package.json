@@ -8,7 +8,7 @@
     "get-ip": "echo $(echo 'http://')$(ipconfig getifaddr en0)",
     "dev": "webpack --mode development",
     "build": "yarn autoload && webpack --mode production",
-    "start": "babel-watch ./server.js",
+    "start": "webpack-dev-server --open",
     "watch": "webpack --watch --config webpack.config.js",
     "serve": "node socket.js",
     "ios": "cordova run ios",
@@ -19,9 +19,6 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "engines": {
-    "node": "10.15.3"
-  },
   "author": "GeorgieSantiago",
   "license": "GPL-3.0",
   "devDependencies": {

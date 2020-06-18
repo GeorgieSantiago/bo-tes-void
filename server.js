@@ -1,15 +1,15 @@
-require('dotenv').config()
 const express = require('express');
 const app     = express();
 const server  = require('http').Server(app);
-const host    = process.env.APP_URL  || "192.168.1.3"
-const port    = process.env.APP_PORT || "8080"
+//require('dotenv').config()
+const host    = process.env.APP_URL  || "0.0.0.0"
+const port    = process.env.APP_PORT || "3000"
 
 //Set root directory
-app.use(express.static(__dirname + '/www'));
+app.use(express.static(__dirname + '/src'));
 //Set route handler
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/src/index.html');
 });
 //Start the mother fuckin server
 server.listen(port, host , function () {

@@ -1,5 +1,5 @@
 //Get .env
-require('dotenv').config()
+//require('dotenv').config()
 //Create Express and Socket.io server
 const express = require('express');
 const app     = express();
@@ -96,7 +96,7 @@ io.on('connection', function (socket) {
     socket.broadcast.emit('player_joining', players[socket.id]);
     // Player deployed
     socket.on('player_deploy', characterInfo => {
-      console.log(characterInfo, "Player")
+       console.log(characterInfo, "Player")
        socket.broadcast.emit('player_deployed', characterInfo)
     })
     // Player spectate
