@@ -2,6 +2,7 @@ import Scene from './Scene'
 import { Player, SandboxMonster, Crewmen } from '../sprites'
 import HUD from './HUD';
 import io from 'socket.io-client'
+import { eventEmit, eventBroadcast } from '../multiplayer/event'
 
 class Sandbox extends Scene {
     constructor(test) {
@@ -58,7 +59,8 @@ class Sandbox extends Scene {
         this.hud.showDialog("Joining Game...")
         //Once connected
         this.socket.on('connect',(socket) => {
-
+        console.log("Connection penis")
+        eventEmit("test", this.socket)
         const playerStart = this.map.getObjectLayer('player_start')['objects']
         /**
          * Add enemies
@@ -91,6 +93,7 @@ class Sandbox extends Scene {
         * Add all players
         */
        this.socket.on('player_join', players => {
+
         /**
          * Joining workflow.
          * @step1 Player joins. 

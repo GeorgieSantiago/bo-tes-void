@@ -11,6 +11,7 @@ export default class CCannon extends Phaser.GameObjects.Image
         this.xSpeed = 0;
         this.ySpeed = 0;
         this.setSize(12, 12, true);
+        this.expires = 1000
     }
 
         // Fires a bullet from the player to the reticle
@@ -37,14 +38,19 @@ export default class CCannon extends Phaser.GameObjects.Image
     
         // Updates the position of the bullet each cycle
         update(time, delta) {
+            this.expires -= 0.1
             this.x += this.xSpeed * delta;
             this.y += this.ySpeed * delta;
             this.born += delta;
-            if (this.born > 1800)
-            {
-                this.setActive(false);
-                this.setVisible(false);
+
+            if( this.expires <= 0 || this.born > 1800 ) {
+                this.destruct()
             }
+        }
+
+        destruct() {
+            this.setActive(false)
+            this.setVisible(false)
         }
     
 }
