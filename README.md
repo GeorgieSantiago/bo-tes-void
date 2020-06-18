@@ -11,39 +11,28 @@ A template boilerplate for making phaser 3 projects (could be other projects) an
 ## Getting Started
 Installation steps to set this template up and running.
 
+## Required
+ - Docker
+ - docker-compose
+
 ### Install
 #### Clone repo (and specify folder name)
 ```
-git clone https://github.com/PeeJeeDR/phaser-3-webpack-cordova.git PROJECT_NAME
+git clone https://github.com/GeorgieSantiago/bo-tes-void.git bootesvoid
 ```
 
-#### Navigate in folder
 ```
-cd PROJECT_NAME
-```
-
-#### Remove git
-```
-rm -rf .git
+cd bootesvoid
 ```
 
-#### Optional init own
 ```
-git init
-```
-
-#### Install dependecies
-```
-yarn
+docker build -t bootesvoid_bootesvoid-game .
 ```
 
-### Available scripts
-#### Start development server
 ```
-yarn serve
+docker-compose up -d
 ```
-
-On desktop visit http://localhost:8080 to open the project. In order to visit the project on another device (phone, ipad, etc.) you wil have to get the public ip address of your machine first. You can do this by running the following command (in new terminal):
+#### For more help with docker
 
 **MAC**
 ```
